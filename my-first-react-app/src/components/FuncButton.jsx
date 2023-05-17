@@ -1,5 +1,6 @@
 function FuncButton(props) {
-  return <button className={props.className}>{props.title}</button>;
+  const { className, title } = props;
+  return <button className={className}>{title}</button>;
 }
 
 export default FuncButton;

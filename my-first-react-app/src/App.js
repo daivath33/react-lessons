@@ -1,21 +1,33 @@
 import "./App.css";
-import FuncButton from "./components/FuncButton";
-import FuncText from "./components/FuncText";
+import ClassDiv from "./components/ClassDiv";
+import FuncDiv from "./components/FuncDiv";
 import HeadingText from "./components/HeadingText";
 
 function App() {
-  const text = "from React learning app";
+  const description =
+    "React is a JavaScript library for building user interfaces. Learn what React is all about on our homepage or in the tutorial.";
   function addDescription() {
     return "React is the library for web and native user interfaces";
   }
   return (
-    <div className="App">
-      <HeadingText text="Daiva"></HeadingText>
-      <HeadingText text={text}></HeadingText>
-      <FuncText text={addDescription()}></FuncText>
-      <FuncButton className="btn" title="Login"></FuncButton>
-      <FuncButton className="btn btn-accent" title="Signup"></FuncButton>
-    </div>
+    <>
+      <div className="App">
+        <HeadingText text={addDescription()}></HeadingText>
+        <FuncDiv
+          className="bg-dark"
+          heading="React documentation"
+          text={description}
+        ></FuncDiv>
+        {/* <ClassDiv heading="" text=""></ClassDiv> */}
+      </div>
+      <div>
+        <ClassDiv
+          className="App"
+          heading="JavaScript is the programming language of the Web"
+          text="JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. "
+        ></ClassDiv>
+      </div>
+    </>
   );
 }
 
