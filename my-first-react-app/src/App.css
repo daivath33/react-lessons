@@ -54,9 +54,37 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  gap: 30px;
+  gap: 20px;
   padding: 50px;
 }
 .text-primary {
   color: #c2255c;
+}
+img {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.card {
+  width: 300px;
+  background-color: rgb(54, 52, 52);
+  border-radius: 5px;
+}
+.card h3 {
+  padding: 10px;
+}
+.card p {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.dark-mode {
+  padding: 50px;
+  background-color: #000;
 }

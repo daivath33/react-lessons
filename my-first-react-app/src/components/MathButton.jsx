@@ -6,10 +6,10 @@ const MathButton = (props) => {
   return <div></div>;
 };
 
-MathButton.propTypes = {
-  number1: PropTypes.number,
-  number2: PropTypes.number,
-  operator: PropTypes.string,
-};
+// MathButton.propTypes = {
+//   number1: PropTypes.number,
+//   number2: PropTypes.number,
+//   operator: PropTypes.string,
+// };
 
 export default MathButton;

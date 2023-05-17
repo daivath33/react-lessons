@@ -10,7 +10,4 @@ const Clock = (props) => {
   );
 };
 
-Clock.propTypes = {
-  date: PropTypes.Date(),
-};
 export default Clock;

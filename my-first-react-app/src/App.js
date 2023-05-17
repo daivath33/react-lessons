@@ -1,4 +1,5 @@
 import "./App.css";
+import Card from "./components/Card";
 import ClassDiv from "./components/ClassDiv";
 import Clock from "./components/Clock";
 import FuncDiv from "./components/FuncDiv";
@@ -27,6 +28,18 @@ function App() {
           heading="JavaScript is the programming language of the Web"
           text="JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. "
         ></ClassDiv>
+      </div>
+      <div className="flex-box dark-mode">
+        <Card
+          imageUrl="image1.jpg"
+          title="Image Nr. 1"
+          subtitle="A Person working with computer"
+        ></Card>
+        <Card
+          imageUrl="image2.jpg"
+          title="Image Nr. 2"
+          subtitle="Buro image with computer"
+        ></Card>
       </div>
     </>
   );
