@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import ClassButton from "./ClassButton";
 
 class ClassDiv extends React.Component {
@@ -13,4 +14,8 @@ class ClassDiv extends React.Component {
   }
 }
 
+ClassDiv.propTypes = {
+  heading: PropTypes.string,
+  text: PropTypes.string,
+};
 export default ClassDiv;

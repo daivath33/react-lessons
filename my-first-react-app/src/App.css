@@ -15,6 +15,7 @@
 
 .btn {
   background-color: #e64980;
+  border: 2px solid #c2255c;
   border: none;
   padding: 15px 40px;
   border-radius: 30px;
@@ -26,7 +27,9 @@
   transition: all 0.3s;
 }
 .btn:hover {
-  background-color: #c2255c;
+  background-color: #fff;
+  color: #c2255c;
+  border: 2px solid #c2255c;
 }
 
 .btn-accent {
@@ -55,4 +58,7 @@
   padding: 20px;
   gap: 30px;
   padding: 50px;
+}
+.text-primary {
+  color: #c2255c;
 }

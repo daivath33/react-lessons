@@ -1,24 +1,25 @@
 import "./App.css";
 import ClassDiv from "./components/ClassDiv";
+import Clock from "./components/Clock";
 import FuncDiv from "./components/FuncDiv";
-import HeadingText from "./components/HeadingText";
+import Greeiting from "./components/Greeting";
 
 function App() {
   const description =
     "React is a JavaScript library for building user interfaces. Learn what React is all about on our homepage or in the tutorial.";
   function addDescription() {
-    return "React is the library for web and native user interfaces";
+    return "how are you?";
   }
   return (
     <>
       <div className="App">
-        <HeadingText text={addDescription()}></HeadingText>
+        <Clock className="bg-dark text-primary"></Clock>
+        <Greeiting text={addDescription()}></Greeiting>
         <FuncDiv
           className="bg-dark"
           heading="React documentation"
           text={description}
         ></FuncDiv>
-        {/* <ClassDiv heading="" text=""></ClassDiv> */}
       </div>
       <div>
         <ClassDiv
