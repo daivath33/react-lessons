@@ -68,7 +68,7 @@ img {
 }
 .card {
   width: 300px;
-  background-color: rgb(54, 52, 52);
+  background-color: #fff;
   border-radius: 5px;
 }
 .card h3 {
