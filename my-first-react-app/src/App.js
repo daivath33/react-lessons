@@ -4,6 +4,7 @@ import ClassDiv from "./components/ClassDiv";
 import Clock from "./components/Clock";
 import FuncDiv from "./components/FuncDiv";
 import Greeiting from "./components/Greeting";
+import Avatar from "./components/Avatar";
 
 function App() {
   const description =
@@ -14,32 +15,40 @@ function App() {
   return (
     <>
       <div className="App">
-        <Clock className="bg-dark text-primary"></Clock>
-        <Greeiting text={addDescription()}></Greeiting>
+        <Clock className="bg-dark text-primary" />
+        <Greeiting text={addDescription()} />
         <FuncDiv
           className="bg-dark"
           heading="React documentation"
           text={description}
-        ></FuncDiv>
+        />
       </div>
       <div>
         <ClassDiv
           className="App"
           heading="JavaScript is the programming language of the Web"
           text="JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. "
-        ></ClassDiv>
+        />
       </div>
       <div className="flex-box dark-mode">
         <Card
           imageUrl="image1.jpg"
           title="Image Nr. 1"
           subtitle="A Person working with computer"
-        ></Card>
+        />
         <Card
           imageUrl="image2.jpg"
           title="Image Nr. 2"
           subtitle="Buro image with computer"
-        ></Card>
+        />
+      </div>
+      <div class="flex-box dark-mode">
+        <Avatar name="Jonas Jonaitis" className="avatar flex-box bg-green" />
+        <Avatar
+          name="Rita Jonaitiene"
+          className="avatar flex-box bg-deeppink "
+        />
+        <Avatar name="Petras Petraitis" className="avatar flex-box bg-blue" />
       </div>
     </>
   );

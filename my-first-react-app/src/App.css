@@ -15,7 +15,6 @@
 
 .btn {
   background-color: #e64980;
-
   border: none;
   padding: 15px 40px;
   border-radius: 30px;
@@ -87,4 +86,21 @@ img {
 .dark-mode {
   padding: 50px;
   background-color: #000;
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 100%;
+  background-color: gray;
+  color: #fff;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-blue {
+  background-color: blue;
+}
+.bg-deeppink {
+  background-color: deeppink;
 }
