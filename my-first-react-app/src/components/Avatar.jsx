@@ -1,10 +1,11 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const Avatar = (props) => {
+  const { name, className } = props;
   return (
-    <div className={props.className}>
+    <div className={className}>
       <h1>
-        {props.name
+        {name
           .split(" ")
           .map((word) => word[0])
           .join("")
@@ -14,4 +15,8 @@ const Avatar = (props) => {
   );
 };
 
+Avatar.propTypes = {
+  name: PropTypes.string,
+  className: PropTypes.string,
+};
 export default Avatar;
