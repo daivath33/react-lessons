@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
 function FuncText(props) {
-  const { text } = props;
-  return <h3>{text}</h3>;
+  const { text, className } = props;
+  return <h3 className={className}>{text}</h3>;
 }
 
 FuncText.propTypes = {

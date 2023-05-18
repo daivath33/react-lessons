@@ -5,6 +5,8 @@ import Clock from "./components/Clock";
 import FuncDiv from "./components/FuncDiv";
 import Greeiting from "./components/Greeting";
 import Avatar from "./components/Avatar";
+import Product from "./components/Product";
+import FuncText from "./components/FuncText";
 
 function App() {
   const description =
@@ -12,6 +14,13 @@ function App() {
   function addDescription() {
     return "how are you?";
   }
+  const products = [
+    {
+      category: "canvases",
+      name: "off-white air jordan 1 canvas",
+      price: "16.00€ - 32.00€",
+    },
+  ];
   return (
     <>
       <div className="App">
@@ -49,6 +58,57 @@ function App() {
           className="avatar flex-box bg-deeppink "
         />
         <Avatar name="Petras Petraitis" className="avatar flex-box bg-blue" />
+      </div>
+      <FuncText text="BEST SELLERS" className="prod-box-heading" />
+      <div className="flex-box">
+        <Product
+          className="product-card"
+          category="canvases"
+          name="off-white air jordan 1 canvas"
+          price="32.00€ - 120.00€"
+        />
+        <Product
+          className="product-card"
+          category="posters"
+          name="yeezy boost 350 v2 frozen yellow poster"
+          price="16.00€ - 32.00€"
+        />
+        <Product
+          className="product-card"
+          category="stikers"
+          name="yeezy boost 350 v2 zebra"
+          price="5.00€"
+        />
+        <Product
+          className="product-card"
+          category="adidas"
+          name="adidas yeezy powerphse calabasas poster"
+          price="16.00€ - 32.00€"
+        />
+        <Product
+          className="product-card"
+          category="jordans"
+          name="air jordans 4 red suede poster"
+          price="16.00€ - 32.00€"
+        />
+        <Product
+          className="product-card"
+          category="balenciaga"
+          name="balenciaga tripple 5 poster"
+          price="16.00€ - 32.00€"
+        />
+        <Product
+          className="product-card"
+          category="jnike"
+          name="nike blazer mid sacai poster"
+          price="16.00€ - 32.00€"
+        />
+        <Product
+          className="product-card"
+          category="artists"
+          name="lil peep poster"
+          price="16.00€ - 32.00€"
+        />
       </div>
     </>
   );
