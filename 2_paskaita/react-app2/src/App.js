@@ -5,6 +5,7 @@ import Counter from "./components/Counter";
 
 import FuncBestCar from "./components/FuncBestCar";
 import FuncCar from "./components/FuncCar";
+import FuncCounter from "./components/FuncCounter";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
       <h1>FUNCTIONAL COUNTER</h1>
       <div className="flex-box">
         <Counter />
+      </div>
+      <div>
+        <h1>ANOTHER FUNCTIONAL COUNTER</h1>
+        <FuncCounter />
       </div>
       <div>
         <h1>CLASS COUNTER</h1>
