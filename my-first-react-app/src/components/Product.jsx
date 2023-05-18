@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Product = (props) => {
   const { category, name, price, className } = props;
@@ -12,4 +13,9 @@ const Product = (props) => {
   );
 };
 
+Product.propTypes = {
+  category: PropTypes.string,
+  name: PropTypes.string,
+  price: PropTypes.string,
+};
 export default Product;

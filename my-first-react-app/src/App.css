@@ -105,11 +105,13 @@ img {
 .bg-deeppink {
   background-color: #d6336c;
 }
+
+/** ---------------- Product component  ------------*/
 .prod-box-heading {
   text-align: center;
   margin: 30px;
-  font-size: 36px;
-  font-weight: 500;
+  font-size: 42px;
+  font-weight: 400;
 }
 .product-card {
   width: 340px;
