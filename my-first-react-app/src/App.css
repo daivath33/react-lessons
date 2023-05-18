@@ -113,6 +113,12 @@ img {
   font-size: 42px;
   font-weight: 400;
 }
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 .product-card {
   width: 340px;
 }

@@ -5,7 +5,6 @@ import Clock from "./components/Clock";
 import FuncDiv from "./components/FuncDiv";
 import Greeiting from "./components/Greeting";
 import Avatar from "./components/Avatar";
-import Product from "./components/Product";
 import FuncText from "./components/FuncText";
 import Products from "./components/Products";
 
@@ -15,13 +14,7 @@ function App() {
   function addDescription() {
     return "how are you?";
   }
-  const products = [
-    {
-      category: "canvases",
-      name: "off-white air jordan 1 canvas",
-      price: "16.00€ - 32.00€",
-    },
-  ];
+
   return (
     <>
       <div className="App">
@@ -52,7 +45,7 @@ function App() {
           subtitle="Buro image with computer"
         />
       </div>
-      <div class="flex-box dark-mode">
+      <div className="flex-box dark-mode">
         <Avatar name="Jonas Jonaitis" className="avatar flex-box bg-green" />
         <Avatar
           name="Rita Jonaitiene"

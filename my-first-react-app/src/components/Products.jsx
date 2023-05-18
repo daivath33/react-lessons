@@ -2,6 +2,14 @@ import React from "react";
 import Product from "./Product";
 
 const Products = () => {
+  const products = [
+    {
+      category: "canvases",
+      name: "off-white air jordan 1 canvas",
+      price: "16.00€ - 32.00€",
+    },
+  ];
+
   return (
     <div className="flex-box">
       <Product
