@@ -81,7 +81,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .dark-mode {
   padding: 50px;
@@ -96,11 +97,42 @@ img {
   color: #fff;
 }
 .bg-green {
-  background-color: green;
+  background-color: #37b24d;
 }
 .bg-blue {
-  background-color: blue;
+  background-color: #1971c2;
 }
 .bg-deeppink {
-  background-color: deeppink;
+  background-color: #d6336c;
+}
+.prod-box-heading {
+  text-align: center;
+  margin: 30px;
+  font-size: 36px;
+  font-weight: 500;
+}
+.product-card {
+  width: 340px;
+}
+.product-card p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #adb5bd;
+  text-transform: capitalize;
+}
+.product-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #495057;
+  text-transform: uppercase;
+}
+.product-card h5 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  text-transform: capitalize;
+}
+.product-card .stars {
+  font-size: 28px;
+  color: #495057;
 }
