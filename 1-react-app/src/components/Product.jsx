@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+// import StarBorderIcon from "@mui/icons-material/StarBorder";
 
 const Product = ({ category, name, price, className }) => {
   return (
     <div className={className}>
       <p>{category}</p>
       <h3>{name}</h3>
-      <div className="stars">&#9734;&#9734;&#9734;&#9734;&#9734;</div>
+      <div className="stars">{/* <StarBorderIcon /> */}</div>
       <h5>{price}</h5>
     </div>
   );
