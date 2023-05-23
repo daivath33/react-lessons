@@ -39,7 +39,6 @@ const Product = ({
             </p>
           </div>
         </div>
-
         <p className="price">{price.toFixed(2)}€</p>
         <p>12 unique designs</p>
         <p>{description}</p>
