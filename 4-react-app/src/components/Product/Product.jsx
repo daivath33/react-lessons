@@ -1,0 +1,68 @@
+import React, { useState } from "react";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+
+import "./Product.css";
+const Product = ({
+  image1,
+  image2,
+  title,
+  price,
+  description,
+  availability,
+  category,
+}) => {
+  const [count, setCount] = useState(0);
+  const increase = () => {
+    if (count < availability) setCount(count + 1);
+  };
+  const decrease = () => {
+    if (count > 0) setCount(count - 1);
+  };
+  return (
+    <div className="card">
+      <div className="left">
+        <img src={image1} alt="" />
+        <img src={image2} alt="" />
+      </div>
+      <div className="right">
+        <div className="card-heading ">
+          <div>
+            <h3>{title}</h3>
+            <h3>2022 Calendar</h3>
+          </div>
+          <div className="arrow-icons">
+            <p className="arrow-icon">
+              <AiOutlineLeft />
+            </p>
+            <p className="arrow-icon">
+              <AiOutlineRight />
+            </p>
+          </div>
+        </div>
+
+        <p className="price">{price.toFixed(2)}€</p>
+        <p>12 unique designs</p>
+        <p>{description}</p>
+        <p>Limited to 50 pieces</p>
+        <p>One size:</p>
+        <p>11.7x16.5 inch/(297x420mm)</p>
+        <h4>
+          Availability: <span>{availability} in stock</span>
+        </h4>
+        <div className="btn-group">
+          <button className="btn-count" onClick={decrease}>
+            -
+          </button>
+          <p className="count">{count}</p>
+          <button className="btn-count" onClick={increase}>
+            +
+          </button>
+          <button className="btncal">ADD TO CART</button>
+        </div>
+        <p className="card-footer">Category: {category}</p>
+      </div>
+    </div>
+  );
+};
+
+export default Product;
