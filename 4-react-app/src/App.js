@@ -11,6 +11,10 @@ function App() {
     availability: 10,
     description: "All pieces are printed on heavyweight 200 gsm art paper.",
     category: "Calendars",
+    designs: "12 unique designs",
+    limit: "Limited to 50 pieces",
+    size: "One size:",
+    dimensions: "11.7x16.5 inch/(297x420mm)",
   };
   return (
     <div>
@@ -22,6 +26,10 @@ function App() {
         availability={product.availability}
         description={product.description}
         category={product.category}
+        designs={product.designs}
+        limit={product.limit}
+        size={product.size}
+        dimensions={product.dimensions}
       />
     </div>
   );

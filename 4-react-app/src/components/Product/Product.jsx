@@ -11,8 +11,11 @@ const Product = ({
   description,
   availability,
   category,
+  designs,
+  limit,
+  size,
+  dimensions,
 }) => {
-
   const [count, setCount] = useState(0);
 
   const increase = () => {
@@ -22,7 +25,7 @@ const Product = ({
   const decrease = () => {
     if (count > 0) setCount(count - 1);
   };
-  
+
   return (
     <div className="card">
       <div className="left">
@@ -45,11 +48,11 @@ const Product = ({
           </div>
         </div>
         <p className="price">{price.toFixed(2)}€</p>
-        <p>12 unique designs</p>
+        <p>{designs}</p>
         <p>{description}</p>
-        <p>Limited to 50 pieces</p>
-        <p>One size:</p>
-        <p>11.7x16.5 inch/(297x420mm)</p>
+        <p>{limit}</p>
+        <p>{size}</p>
+        <p>{dimensions}</p>
         <h4>
           Availability: <span>{availability} in stock</span>
         </h4>
