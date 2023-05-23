@@ -13,7 +13,7 @@ function App() {
     category: "Calendars",
     designs: "12 unique designs",
     limit: "Limited to 50 pieces",
-    size: "One size:",
+    sizes: "One size:",
     dimensions: "11.7x16.5 inch/(297x420mm)",
   };
   return (
@@ -28,7 +28,7 @@ function App() {
         category={product.category}
         designs={product.designs}
         limit={product.limit}
-        size={product.size}
+        sizes={product.sizes}
         dimensions={product.dimensions}
       />
     </div>

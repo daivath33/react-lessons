@@ -13,7 +13,7 @@ const Product = ({
   category,
   designs,
   limit,
-  size,
+  sizes,
   dimensions,
 }) => {
   const [count, setCount] = useState(0);
@@ -51,7 +51,7 @@ const Product = ({
         <p>{designs}</p>
         <p>{description}</p>
         <p>{limit}</p>
-        <p>{size}</p>
+        <p>{sizes}</p>
         <p>{dimensions}</p>
         <h4>
           Availability: <span>{availability} in stock</span>
