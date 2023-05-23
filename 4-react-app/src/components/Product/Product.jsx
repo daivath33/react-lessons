@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-
+import Button from "../Button/Button";
 import "./Product.css";
+
 const Product = ({
   image1,
   image2,
@@ -56,7 +57,7 @@ const Product = ({
           <button className="btn-count" onClick={increase}>
             +
           </button>
-          <button className="btncal">ADD TO CART</button>
+          <Button title="ADD TO CART" />
         </div>
         <p className="card-footer">Category: {category}</p>
       </div>
