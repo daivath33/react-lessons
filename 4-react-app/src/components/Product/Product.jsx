@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Button from "../Button/Button";
 import "./Product.css";
@@ -12,13 +12,17 @@ const Product = ({
   availability,
   category,
 }) => {
+
   const [count, setCount] = useState(0);
+
   const increase = () => {
     if (count < availability) setCount(count + 1);
   };
+
   const decrease = () => {
     if (count > 0) setCount(count - 1);
   };
+  
   return (
     <div className="card">
       <div className="left">
