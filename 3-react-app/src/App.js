@@ -2,7 +2,7 @@ import "./App.css";
 import Hero from "./components/hero/Hero";
 import Button from "./components/button/Button";
 import MoodChecker from "./components/moodChecker/MoodChecker";
-
+import Product from "./components/product/Product";
 function App() {
   return (
     <>
@@ -19,6 +19,8 @@ function App() {
       <div className="mg-t-30 flex-box">
         <MoodChecker />
       </div>
+      <hr />
+      <Product />
     </>
   );
 }
