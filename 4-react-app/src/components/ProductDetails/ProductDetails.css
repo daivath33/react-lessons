@@ -1,0 +1,78 @@
+.card {
+  margin: 0 auto;
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-top: 50px;
+}
+img {
+  width: 200px;
+}
+.left {
+  flex: 1.5;
+  height: 100%;
+  background: linear-gradient(135deg, #fff, lightgray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.right {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.card-heading {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.arrow-icons {
+  display: flex;
+  align-self: flex-start;
+  margin-left: 20px;
+}
+.arrow-icon {
+  margin: 0 3px;
+}
+.flex-div h3 {
+  margin-right: 20px;
+}
+.price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.btn-count,
+.count,
+.arrow-icon {
+  padding: 5px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  border-radius: 2px;
+  background-color: #fff;
+}
+span {
+  color: green;
+}
+.card-footer {
+  font-size: 12px;
+}
